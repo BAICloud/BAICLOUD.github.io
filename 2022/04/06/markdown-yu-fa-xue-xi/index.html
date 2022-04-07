@@ -592,10 +592,10 @@ ___<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 	<span class="token list punctuation">*</span> 以后都不做咸鱼<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>结果：</p>
 <ul>
-<li>今天不做咸鱼</li>
+<li> 今天不做咸鱼</li>
 </ul>
 <ul>
-<li>明天不做咸鱼</li>
+<li> 明天不做咸鱼</li>
 </ul>
 <ul>
 <li>后天不做咸鱼<ul>
@@ -606,7 +606,7 @@ ___<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 <h3 id="在列表中嵌套其他元素"><a href="#在列表中嵌套其他元素" class="headerlink" title="在列表中嵌套其他元素"></a>在列表中嵌套其他元素</h3><p>要在保留列表连续性的同时在列表中添加另一种元素，请将该元素缩进四个空格或一个制表符</p>
 <h4 id="段落-引用块"><a href="#段落-引用块" class="headerlink" title="段落 引用块"></a>段落 引用块</h4><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">+</span> 昨天做了咸鱼
 
-<span class="token code keyword">	今天不做咸鱼</span>
+<span class="token code keyword">    今天不做咸鱼</span>
 	
 <span class="token list punctuation">+</span> 明天不做咸鱼
 
@@ -614,26 +614,40 @@ ___<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 
 <span class="token list punctuation">+</span> 这是不可能的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>结果：</p>
+<ul>
+<li><p>昨天做了咸鱼</p>
+<p>  今天不做咸鱼</p>
+</li>
+<li><p>明天不做咸鱼</p>
+<blockquote>
+<p>以后都不做咸鱼</p>
+</blockquote>
+</li>
+<li><p>这是不可能的</p>
+</li>
+</ul>
 <h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><p>代码块通常采用四个空格或一个制表符缩进。当它们被放在列表中时，请将它们缩进八个空格或两个制表符。</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">+</span> 昨天做了咸鱼
 
 <span class="token list punctuation">+</span> 今天不做咸鱼
 
-   ```html
-   	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-   		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>明天不做咸鱼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-   	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token code keyword">		&lt;head&gt;</span>
+   			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>明天不做咸鱼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token list punctuation">+</span> 后天不做咸鱼<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果：</p>
 <ul>
-<li>后天不做咸鱼<pre class="line-numbers language-none"><code class="language-none">结果：
-+ 昨天做了咸鱼
-
-+ 今天不做咸鱼
-
-   ```html
-   	&lt;head&gt;
-   		&lt;title&gt;明天不做咸鱼&lt;/title&gt;
-   	&lt;/head&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>后天不做咸鱼</li>
+<li><p>昨天做了咸鱼</p>
+</li>
+<li><p>今天不做咸鱼</p>
+<pre><code>  &lt;head&gt;
+         &lt;title&gt;明天不做咸鱼&lt;/title&gt;
+  &lt;/head&gt;
+</code></pre>
+</li>
+<li><p>后天不做咸鱼</p>
+</li>
 </ul>
 <h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>缩进一字符</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="单词代码"><a href="#单词代码" class="headerlink" title="单词代码"></a>单词代码</h3><p>要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。</p>
@@ -641,47 +655,34 @@ ___<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 <p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(````)中。</p>
 <p><code>NO `SALTED FISH` TODAY</code></p>
 <h3 id="代码块-1"><a href="#代码块-1" class="headerlink" title="代码块"></a>代码块</h3><p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。</p>
-<p>​```html<br>    <br>        <br>            <title>今天不做咸鱼</title><br>        <br>    </p>
-<pre class="line-numbers language-none"><code class="language-none">
-### 围栏代码块
-在代码块之前和之后的行上使用三个反引号（(```）或三个波浪号（~~~）。
-```markdown<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<pre><code>{
-    #incldue  &lt;iostream&gt;
-    using namesapce std;
-    int main()
-    {
-        cout&lt;&lt;"Hellow World"&lt;&lt;endl;
-        return 0;
-    }
-}
-<pre class="line-numbers language-none"><code class="language-none">```
-
-### 语法高亮
-要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言。
-```markdown
-	```c++
-	{
-		#incldue  &lt;iostream&gt;
-		using namesapce std;
-		int main()
-		{
-			cout&lt;&lt;"Hellow World"&lt;&lt;endl;
-			return 0;
-		}
-	}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;今天不做咸鱼&lt;/title&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
 </code></pre>
-<pre class="line-numbers language-none"><code class="language-none">结果：
-```c++
+<h3 id="围栏代码块"><a href="#围栏代码块" class="headerlink" title="围栏代码块"></a>围栏代码块</h3><p>在代码块之前和之后的行上使用三个反引号（```）或三个波浪号（~~~）。</p>
+<pre class="line-numbers language-none"><code class="language-none">{
+	#incldue  &lt;iostream&gt;
+	using namesapce std;
+	int main()
 	{
-		#incldue  &lt;iostream&gt;
-		using namesapce std;
-		int main()
-		{
-			cout&lt;&lt;"Hellow World"&lt;&lt;endl;
-			return 0;
-		}
-	}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+		cout&lt;&lt;"Hellow World"&lt;&lt;endl;
+		return 0;
+	}
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h3 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h3><p>要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言。</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">{
+	#incldue  &lt;iostream&gt;
+	using namesapce std;
+	int main()
+	{
+		cout&lt;&lt;"Hellow World"&lt;&lt;endl;
+		return 0;
+	}
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 <h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h3 id="给链接加Title"><a href="#给链接加Title" class="headerlink" title="给链接加Title"></a>给链接加Title</h3><p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。<br>今天不做 <a target="_blank" rel="noopener" href="https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif" title="咸鱼">咸鱼</a></p>
