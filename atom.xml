@@ -6,7 +6,7 @@
   <link href="http://baicloud.github.io/atom.xml" rel="self"/>
   
   <link href="http://baicloud.github.io/"/>
-  <updated>2022-04-07T09:42:52.425Z</updated>
+  <updated>2022-04-07T17:21:44.199Z</updated>
   <id>http://baicloud.github.io/</id>
   
   <author>
@@ -17,18 +17,70 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CSS 语法学习</title>
+    <link href="http://baicloud.github.io/2022/04/08/css-yu-fa-xue-xi/"/>
+    <id>http://baicloud.github.io/2022/04/08/css-yu-fa-xue-xi/</id>
+    <published>2022-04-07T17:18:02.000Z</published>
+    <updated>2022-04-07T17:21:44.199Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;跟着&lt;a href=&quot;https://www.bilibili.com/video/BV14J4114768?t=2.7&quot;&gt;pink老师&lt;/a&gt;的教程做的笔记&lt;/p&gt;
+&lt;h1 id=&quot;css笔记&quot;&gt;&lt;a href=&quot;#css笔记&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://baicloud.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="CSS" scheme="http://baicloud.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML 语法学习</title>
+    <link href="http://baicloud.github.io/2022/04/08/html-yu-fa-xue-xi/"/>
+    <id>http://baicloud.github.io/2022/04/08/html-yu-fa-xue-xi/</id>
+    <published>2022-04-07T17:12:00.000Z</published>
+    <updated>2022-04-07T17:16:39.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;跟着&lt;a href=&quot;https://www.bilibili.com/video/BV14J4114768?t=2.7&quot;&gt;pink老师&lt;/a&gt;的教程做的笔记&lt;/p&gt;
+&lt;h1 id=&quot;HTML-5&quot;&gt;&lt;a href=&quot;#HTML-5&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://baicloud.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="HTML" scheme="http://baicloud.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown 语法学习</title>
     <link href="http://baicloud.github.io/2022/04/06/markdown-yu-fa-xue-xi/"/>
     <id>http://baicloud.github.io/2022/04/06/markdown-yu-fa-xue-xi/</id>
     <published>2022-04-06T02:03:08.000Z</published>
-    <updated>2022-04-07T09:42:52.425Z</updated>
+    <updated>2022-04-07T17:17:07.768Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;前段时间跟着&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官方文档&lt;/a&gt;学了一下markdown语法，顺便整理了一个小一点的笔记，打算以后好好的做笔记（大概）。                        &lt;/p&gt;
+    <summary type="html">&lt;p&gt;前段时间跟着&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官方文档&lt;/a&gt;学了一下markdown语法，顺便整理了一个小一点的笔记，打算以后好好的做笔记（大概）。&lt;br&gt;tags: markdown&lt;/p&gt;
 &lt;h1</summary>
         
       
@@ -38,28 +90,7 @@
     <category term="笔记" scheme="http://baicloud.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="markdown笔记" scheme="http://baicloud.github.io/tags/markdown%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://baicloud.github.io/2022/04/05/hello-world/"/>
-    <id>http://baicloud.github.io/2022/04/05/hello-world/</id>
-    <published>2022-04-05T14:25:06.779Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
+    <category term="markdown" scheme="http://baicloud.github.io/tags/markdown/"/>
     
   </entry>
   
