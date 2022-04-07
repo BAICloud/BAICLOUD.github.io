@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.8k
                 </div>
                 
 
@@ -655,41 +655,70 @@ ___<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 <p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(````)中。</p>
 <p><code>NO `SALTED FISH` TODAY</code></p>
 <h3 id="代码块-1"><a href="#代码块-1" class="headerlink" title="代码块"></a>代码块</h3><p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。</p>
-<pre><code>&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;今天不做咸鱼&lt;/title&gt;
-    &lt;/head&gt;
-&lt;/html&gt;
-</code></pre>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>今天不做咸鱼<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果：<br>    <br>        <br>            <title>今天不做咸鱼</title><br>        <br>    </p>
 <h3 id="围栏代码块"><a href="#围栏代码块" class="headerlink" title="围栏代码块"></a>围栏代码块</h3><p>在代码块之前和之后的行上使用三个反引号（```）或三个波浪号（~~~）。</p>
-<pre class="line-numbers language-none"><code class="language-none">{
-	#incldue  &lt;iostream&gt;
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">/```
+	<span class="token title important"><span class="token punctuation">#</span>incldue  &lt;iostream&gt;</span>
 	using namesapce std;
 	int main()
 	{
 		cout&lt;&lt;"Hellow World"&lt;&lt;endl;
 		return 0;
 	}
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
+/```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果：<br>    </p><pre class="line-numbers language-none"><code class="language-none">#incldue  &lt;iostream&gt;
+using namesapce std;
+int main()
+{
+	cout&lt;&lt;"Hellow World"&lt;&lt;endl;
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
 <h3 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h3><p>要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言。</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">{
-	#incldue  &lt;iostream&gt;
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">/```c++
+	<span class="token title important"><span class="token punctuation">#</span>incldue  &lt;iostream&gt;</span>
 	using namesapce std;
 	int main()
 	{
 		cout&lt;&lt;"Hellow World"&lt;&lt;endl;
 		return 0;
 	}
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+/```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">	#incldue &lt;iostream&gt;
+	using namesapce std;
+	int main()
+	{
+		cout&lt;&lt;"Hellow World"&lt;&lt;endl;
+		return 0;
+	}
+	/```
+
+## 链接
+### 给链接加Title
+链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。
+```markdown
+今天不做 [咸鱼](https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif "咸鱼")<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>今天不做 <a target="_blank" rel="noopener" href="https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif" title="咸鱼">咸鱼</a></p>
+<h3 id="网址和email地址"><a href="#网址和email地址" class="headerlink" title="网址和email地址"></a>网址和email地址</h3><p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接。</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&lt;https://markdown.com.cn&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fake@example.com</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>结果：<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:fake@example.com">fake@example.com</a></p>
+<h3 id="带格式化的链接"><a href="#带格式化的链接" class="headerlink" title="带格式化的链接"></a>带格式化的链接</h3><p>强调链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">I love supporting the <span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token url">[<span class="token content">EFF</span>](<span class="token url">https://eff.org</span>)</span></span><span class="token punctuation">**</span></span>.
+This is the <span class="token italic"><span class="token punctuation">*</span><span class="token content"><span class="token url">[<span class="token content">Markdown Guide</span>](<span class="token url">https://www.markdownguide.org</span>)</span></span><span class="token punctuation">*</span></span>.
+See the section on <span class="token url">[<span class="token content"><span class="token code-snippet code keyword">`code`</span></span>](<span class="token url">#code</span>)</span>.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>结果：<br>I love supporting the <strong><a target="_blank" rel="noopener" href="https://eff.org/">EFF</a></strong>.<br>This is the <em><a target="_blank" rel="noopener" href="https://www.markdownguide.org/">Markdown Guide</a></em>.<br>See the section on <a href="#code"><code>code</code></a>.</p>
+<h2 id="图片-1"><a href="#图片-1" class="headerlink" title="图片"></a>图片</h2><p>要添加图像，请使用感叹号 (!), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。<br>插入图片Markdown语法代码：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">图片alt</span>](<span class="token url">图片url</span> <span class="token string">"图片title"</span>)</span>。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="链接图片"><a href="#链接图片" class="headerlink" title="链接图片"></a>链接图片</h3><p>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">！[图片alt</span>](<span class="token url">图片url</span> <span class="token string">"图片title"</span>)</span>](链接地址)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h3 id="给链接加Title"><a href="#给链接加Title" class="headerlink" title="给链接加Title"></a>给链接加Title</h3><p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。<br>今天不做 <a target="_blank" rel="noopener" href="https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif" title="咸鱼">咸鱼</a></p>
-<h3 id="网址和email地址"><a href="#网址和email地址" class="headerlink" title="网址和email地址"></a>网址和email地址</h3><p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接。<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:fake@example.com">fake@example.com</a></p>
-<h3 id="带格式化的链接"><a href="#带格式化的链接" class="headerlink" title="带格式化的链接"></a>带格式化的链接</h3><p>强调链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。<br>I love supporting the <strong><a target="_blank" rel="noopener" href="https://eff.org/">EFF</a></strong>.<br>This is the <em><a target="_blank" rel="noopener" href="https://www.markdownguide.org/">Markdown Guide</a></em>.<br>See the section on <a href="#code"><code>code</code></a>.</p>
-<h2 id="图片-1"><a href="#图片-1" class="headerlink" title="图片"></a>图片</h2><p>要添加图像，请使用感叹号 (!), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。<br>插入图片Markdown语法代码：<img src="%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5" alt="图片alt" title="图片title">。</p>
-<h3 id="链接图片"><a href="#链接图片" class="headerlink" title="链接图片"></a>链接图片</h3><p>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/"></a><a href="/assets/img/shiprock.jpg" title="Shiprock">沙漠中的岩石图片</a></p>
 <h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 \ 。</p>
 <h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><p>要创建任务列表，请在任务列表项之前添加破折号<code>-</code>和方括号<code>[ ]</code>，并在<code>[ ]</code>前面加上空格。要选择一个复选框，请在方括号<code>[x]</code>之间添加 x 。</p>
 <ul>
@@ -1239,7 +1268,7 @@ gitment.render('gitment-content');
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.8k</span>&nbsp;字
+                class="white-color">1.9k</span>&nbsp;字
             
             
             
