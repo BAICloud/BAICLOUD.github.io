@@ -6,7 +6,7 @@
   <link href="http://baicloud.github.io/atom.xml" rel="self"/>
   
   <link href="http://baicloud.github.io/"/>
-  <updated>2022-04-07T08:02:02.435Z</updated>
+  <updated>2022-04-07T08:21:42.486Z</updated>
   <id>http://baicloud.github.io/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="http://baicloud.github.io/2022/04/06/markdown-yu-fa-xue-xi/"/>
     <id>http://baicloud.github.io/2022/04/06/markdown-yu-fa-xue-xi/</id>
     <published>2022-04-06T02:03:08.000Z</published>
-    <updated>2022-04-07T08:02:02.435Z</updated>
+    <updated>2022-04-07T08:21:42.486Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;MARKDOWN-语法学习&quot;&gt;&lt;a href=&quot;#MARKDOWN-语法学习&quot; class=&quot;headerlink&quot; title=&quot;MARKDOWN 语法学习&quot;&gt;&lt;/a&gt;MARKDOWN 语法学习&lt;/h1&gt;&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot;</summary>
+    <summary type="html">&lt;p&gt;前段时间跟着&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官方文档&lt;/a&gt;学了一下markdown语法，顺便整理了一个小一点的笔记，打算以后好好的做笔记（大概）。&lt;/p&gt;
+&lt;h1 id=&quot;MARKDOWN-语法学习&quot;&gt;&lt;a</summary>
         
       
     
@@ -37,7 +38,7 @@
     <category term="笔记" scheme="http://baicloud.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="markdown 笔记" scheme="http://baicloud.github.io/tags/markdown-%E7%AC%94%E8%AE%B0/"/>
+    <category term="markdown笔记" scheme="http://baicloud.github.io/tags/markdown%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
