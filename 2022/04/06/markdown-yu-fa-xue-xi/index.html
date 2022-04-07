@@ -503,7 +503,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>前段时间跟着<a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown官方文档</a>学了一下markdown语法，顺便整理了一个小一点的笔记，打算以后好好的做笔记（大概）。</p>
+                <p>前段时间跟着<a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown官方文档</a>学了一下markdown语法，顺便整理了一个小一点的笔记，打算以后好好的做笔记（大概）。                        </p>
 <h1 id="MARKDOWN-语法学习"><a href="#MARKDOWN-语法学习" class="headerlink" title="MARKDOWN 语法学习"></a>MARKDOWN 语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>#+space+一级标题<br>##+space+二级标题<br>###+space+三级标题<br>####+space+四级标题<br><strong>最多支持六级标题</strong></p>
 <h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>两个段落间进行空白行分离</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼
@@ -663,7 +663,7 @@ ___<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 <p>结果：<br>    <br>        <br>            <title>今天不做咸鱼</title><br>        <br>    </p>
 <h3 id="围栏代码块"><a href="#围栏代码块" class="headerlink" title="围栏代码块"></a>围栏代码块</h3><p>在代码块之前和之后的行上使用三个反引号（```）或三个波浪号（~~~）。</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">/```
-	<span class="token title important"><span class="token punctuation">#</span>incldue  &lt;iostream&gt;</span>
+	/#incldue  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
 	using namesapce std;
 	int main()
 	{
@@ -688,21 +688,18 @@ int main()
 		return 0;
 	}
 /```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">	#incldue &lt;iostream&gt;
-	using namesapce std;
-	int main()
-	{
-		cout&lt;&lt;"Hellow World"&lt;&lt;endl;
-		return 0;
-	}
-	/```
+<p>结果：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">/#incldue &lt;iostream&gt;
+using namesapce std;
+int main()
+{
+	cout&lt;&lt;"Hellow World"&lt;&lt;endl;
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-## 链接
-### 给链接加Title
-链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。
-```markdown
-今天不做 [咸鱼](https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif "咸鱼")<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>今天不做 <a target="_blank" rel="noopener" href="https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif" title="咸鱼">咸鱼</a></p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h3 id="给链接加Title"><a href="#给链接加Title" class="headerlink" title="给链接加Title"></a>给链接加Title</h3><p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">今天不做 <span class="token url">[<span class="token content">咸鱼</span>](<span class="token url">https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif</span> <span class="token string">"咸鱼"</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>结果：<br>今天不做 <a target="_blank" rel="noopener" href="https://img.zcool.cn/community/0164035c8e2ce5a80121416817801e.gif" title="咸鱼">咸鱼</a></p>
 <h3 id="网址和email地址"><a href="#网址和email地址" class="headerlink" title="网址和email地址"></a>网址和email地址</h3><p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接。</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">&lt;https://markdown.com.cn&gt;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fake@example.com</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
