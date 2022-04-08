@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>白昀の博客</title>
+  <title>BY_CLOUD</title>
   
-  <subtitle>白昀の博客</subtitle>
+  <subtitle>BY_CLOUD</subtitle>
   <link href="http://baicloud.github.io/atom.xml" rel="self"/>
   
   <link href="http://baicloud.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://baicloud.github.io/</id>
   
   <author>
-    <name>白昀</name>
+    <name>BY_CLOUD</name>
     
   </author>
   
