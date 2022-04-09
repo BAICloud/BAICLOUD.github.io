@@ -138,7 +138,7 @@ window.onresize = function () {
 img.onload = function () {
     startSakura();
 }
-ABC
+
 function stopp() {
     if (staticx) {
         var child = document.getElementById("canvas_sakura");
