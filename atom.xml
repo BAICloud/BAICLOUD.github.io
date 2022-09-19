@@ -6,7 +6,7 @@
   <link href="http://baicloud.github.io/atom.xml" rel="self"/>
   
   <link href="http://baicloud.github.io/"/>
-  <updated>2022-09-19T04:26:36.247Z</updated>
+  <updated>2022-09-19T06:26:00.768Z</updated>
   <id>http://baicloud.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HEXO快捷指令</title>
+    <link href="http://baicloud.github.io/2022/09/19/hexo-kuai-jie-zhi-ling/"/>
+    <id>http://baicloud.github.io/2022/09/19/hexo-kuai-jie-zhi-ling/</id>
+    <published>2022-09-19T06:23:31.000Z</published>
+    <updated>2022-09-19T06:26:00.768Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;hexo g (生成)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hexo s/server (开始本地预览服务)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hexo d/deploy (发布上传)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hexo</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://baicloud.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="HEXO建站" scheme="http://baicloud.github.io/tags/HEXO%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>unity笔记</title>

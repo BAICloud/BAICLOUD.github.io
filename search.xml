@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>HEXO快捷指令</title>
+      <link href="/2022/09/19/hexo-kuai-jie-zhi-ling/"/>
+      <url>/2022/09/19/hexo-kuai-jie-zhi-ling/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>hexo g (生成)</p></li><li><p>hexo s/server (开始本地预览服务)</p></li><li><p>hexo d/deploy (发布上传)</p></li><li><p>hexo clean&amp;&amp;hexo g&amp;&amp;hexo d (组合生成发布命令)</p></li><li><p>hexo n/new “postName” (新建文章)</p></li><li><p>hexo new page “pageName” (新建页面)</p></li><li><p>hexo g/generate （生成静态页面至public目录）</p></li><li><p>hexo help (查看帮助)</p></li><li><p>hexo version (查看Hexo版本)</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HEXO建站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>unity笔记</title>
       <link href="/2022/09/19/unity-bi-ji/"/>
       <url>/2022/09/19/unity-bi-ji/</url>
