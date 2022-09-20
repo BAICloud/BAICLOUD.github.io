@@ -8,9 +8,21 @@
       <link href="/2022/09/19/p1135/"/>
       <url>/2022/09/19/p1135/</url>
       
-        <content type="html"><![CDATA[<h1 id="p1135-奇怪的电梯"><a href="#p1135-奇怪的电梯" class="headerlink" title="p1135 奇怪的电梯"></a>p1135 奇怪的电梯</h1><p><img src="https://gitee.com/bai-cloud/image/raw/master/1135.jpg" alt="p1135"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="p1135-奇怪的电梯"><a href="#p1135-奇怪的电梯" class="headerlink" title="p1135 奇怪的电梯"></a>p1135 奇怪的电梯</h1><p><img src="https://raw.githubusercontent.com/BAICloud/image/master/img/22f3bbf0491d0b5e0baf81e540e8bbf.jpg" alt="p1135"></p><p>解法一：深度优先搜索（DFS）</p><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;bits/stdc++.h&gt;using namespace std;int n,a,b,f[2005],ans=1e9;bool vis[2005];void dfs(int L,int count){    if(count &gt;= ans) return;    if(L == b)    {        ans = min(ans,count);        return;    }    if(f[L] == 0)        return;    if(L+f[L]&lt;=n&amp;&amp;vis[L+f[L]]==false)    {        vis[L + f[L]] = true;        dfs(L+f[L],count+1);        vis[L + f[L]] = false;    }    if(L-f[L]&gt;=1&amp;&amp;vis[L-f[L]]==false)    {        vis[L - f[L]] = true;        dfs(L-f[L],count+1);        vis[L - f[L]] = false;    }    return;}signed main(){    cin&gt;&gt;n&gt;&gt;a&gt;&gt;b;    for(int i = 1; i &lt;= n; i++)        cin&gt;&gt;f[i];        vis[a] = true;    dfs(a,0);    if(ans == 1e9) cout&lt;&lt;-1;    else cout &lt;&lt; ans;    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> 刷题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟 广度优先搜索（BFS） 深度优先搜索（DFS） </tag>
+            
+        </tags>
       
     </entry>
     

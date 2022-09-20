@@ -574,12 +574,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%A8%A1%E6%8B%9F-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88BFS%EF%BC%89-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88DFS%EF%BC%89/">
+                                <span class="chip bg-color">模拟 广度优先搜索（BFS） 深度优先搜索（DFS）</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%88%B7%E9%A2%98/" class="post-category">
+                                刷题
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -595,14 +608,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-19
+                    2022-09-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6
+                    164
                 </div>
                 
 
@@ -632,7 +645,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="p1135-奇怪的电梯"><a href="#p1135-奇怪的电梯" class="headerlink" title="p1135 奇怪的电梯"></a>p1135 奇怪的电梯</h1><p><img src="https://gitee.com/bai-cloud/image/raw/master/1135.jpg" alt="p1135"></p>
+                <h1 id="p1135-奇怪的电梯"><a href="#p1135-奇怪的电梯" class="headerlink" title="p1135 奇怪的电梯"></a>p1135 奇怪的电梯</h1><p><img src="https://raw.githubusercontent.com/BAICloud/image/master/img/22f3bbf0491d0b5e0baf81e540e8bbf.jpg" alt="p1135"></p>
+<p>解法一：深度优先搜索（DFS）</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int n,a,b,f[2005],ans=1e9;
+bool vis[2005];
+
+void dfs(int L,int count)
+{
+    if(count &gt;= ans) return;
+    if(L == b)
+    {
+        ans = min(ans,count);
+        return;
+    }
+    if(f[L] == 0)
+        return;
+    if(L+f[L]&lt;=n&amp;&amp;vis[L+f[L]]==false)
+    {
+        vis[L + f[L]] = true;
+        dfs(L+f[L],count+1);
+        vis[L + f[L]] = false;
+    }
+    if(L-f[L]&gt;=1&amp;&amp;vis[L-f[L]]==false)
+    {
+        vis[L - f[L]] = true;
+        dfs(L-f[L],count+1);
+        vis[L - f[L]] = false;
+    }
+    return;
+}
+
+signed main()
+{
+    cin&gt;&gt;n&gt;&gt;a&gt;&gt;b;
+    for(int i = 1; i &lt;= n; i++)
+        cin&gt;&gt;f[i];
+        vis[a] = true;
+    dfs(a,0);
+    if(ans == 1e9) cout&lt;&lt;-1;
+    else cout &lt;&lt; ans;
+    return 0;
+
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -696,7 +754,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%A8%A1%E6%8B%9F-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88BFS%EF%BC%89-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88DFS%EF%BC%89/">
+                                    <span class="chip bg-color">模拟 广度优先搜索（BFS） 深度优先搜索（DFS）</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1215,13 +1277,25 @@ gitment.render('gitment-content');
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            白昀
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%88%B7%E9%A2%98/" class="post-category">
+                                    刷题
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%A8%A1%E6%8B%9F-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88BFS%EF%BC%89-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%EF%BC%88DFS%EF%BC%89/">
+                        <span class="chip bg-color">模拟 广度优先搜索（BFS） 深度优先搜索（DFS）</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1452,7 +1526,7 @@ gitment.render('gitment-content');
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">18k</span>&nbsp;字
+                class="white-color">18.1k</span>&nbsp;字
             
             
             
