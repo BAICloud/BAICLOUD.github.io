@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,c++,c,python">
+    <meta name="keywords" content="unity笔记, HTML,CSS,JavaScript,JQuery,c++,c,python">
     <meta name="description" content="BY_CLOUD的个人博客，用于总结分享经验，记录生活。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>BY_CLOUD</title>
+    <title>unity笔记 | BY_CLOUD</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -455,12 +455,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">unity笔记</h1>
                 </div>
             </div>
         </div>
@@ -574,12 +574,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/unity/">
+                                <span class="chip bg-color">unity</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -595,21 +608,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-24
+                    2022-09-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    10 分
+                    14 分
                 </div>
                 
 
@@ -632,8 +645,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>title: unity笔记<br>author: 白昀<br>top: false<br>cover: false<br>toc: true<br>mathjax: false<br>date: 2022-09-19 02:44:40<br>img:<br>coverImg:<br>password:<br>summary: “对unity进行一个暴扣”<br>tags: unity<br>categories: 笔记</p>
-<h1 id="unity笔记"><a href="#unity笔记" class="headerlink" title="unity笔记"></a>unity笔记</h1><h2 id="一些重要概念"><a href="#一些重要概念" class="headerlink" title="一些重要概念"></a>一些重要概念</h2><p>project工程：一个游戏即一个工程<br>scene场景：一个游戏包括很多场景/关卡<br>gameobject游戏对象： 构成游戏的各种对象。如场景模型，角色以及其他抽象（控制模块）单的确存在于场景中的对象<br>component组件：是unity的核心架构。每个游戏对象有一个或者多个组件构成，每种组件赋予游戏对象某种功能<br>script脚本：是实现component的脚本程序。现在unity支持c#语言<br>prefabs预置：在unity3d中为游戏对象添加各种组件，并设置好他的属性和行为，然后反复利用。</p>
+                <h1 id="unity笔记"><a href="#unity笔记" class="headerlink" title="unity笔记"></a>unity笔记</h1><h2 id="一些重要概念"><a href="#一些重要概念" class="headerlink" title="一些重要概念"></a>一些重要概念</h2><p>project工程：一个游戏即一个工程<br>scene场景：一个游戏包括很多场景/关卡<br>gameobject游戏对象： 构成游戏的各种对象。如场景模型，角色以及其他抽象（控制模块）单的确存在于场景中的对象<br>component组件：是unity的核心架构。每个游戏对象有一个或者多个组件构成，每种组件赋予游戏对象某种功能<br>script脚本：是实现component的脚本程序。现在unity支持c#语言<br>prefabs预置：在unity3d中为游戏对象添加各种组件，并设置好他的属性和行为，然后反复利用。</p>
 <h2 id="C-入门"><a href="#C-入门" class="headerlink" title="C#入门"></a>C#入门</h2><h3 id="GetKeyDown"><a href="#GetKeyDown" class="headerlink" title="GetKeyDown:"></a>GetKeyDown:</h3><pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -1081,17 +1093,20 @@ Input.GetKeydown(KeyCode.S)						//按下就触发
 </tr>
 </tbody></table>
 <ul>
-<li><p>GetKey与GetButten的行为完全相同，且都返回bool。</p>
-</li>
-<li><p>要查看按钮的状态，使用输入管理器内输入的标题字符串jump</p>
-<pre class="line-numbers language-none"><code class="language-none">void Update()
+<li>GetKey与GetButten的行为完全相同，且都返回bool。</li>
+</ul>
+<ul>
+<li>要查看按钮的状态，使用输入管理器内输入的标题字符串jump</li>
+</ul>
+  <pre class="line-numbers language-none"><code class="language-none">void Update()
 {
 	bool down = Input.GetButtenDown("Jump");
 	bool held = Input.GetButten("Jump");
 	bool up = Input.GetButtenUp("Jump");
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>如果要查看特定键的状态可以使用KeyCode。因为KeyCode只与特定键相关，所以建议使用GetButten，并用输入管理器指定输入。</p>
-</li>
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>如果要查看特定键的状态可以使用KeyCode。因为KeyCode只与特定键相关，所以建议使用GetButten，并用输入管理器指定输入。</li>
 </ul>
 <h2 id="GetAxis（轴）"><a href="#GetAxis（轴）" class="headerlink" title="GetAxis（轴）"></a>GetAxis（轴）</h2><blockquote>
 <p>与上两者相似，但返回浮点值（-1&lt;float&lt;1）</p>
@@ -1126,8 +1141,209 @@ Input.GetKeydown(KeyCode.S)						//按下就触发
 float V = Input.GetAxis("Vertical");
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-
 </blockquote>
+<h2 id="OnMouseDown"><a href="#OnMouseDown" class="headerlink" title="OnMouseDown"></a>OnMouseDown</h2><blockquote>
+<p>OnMouseDown及其相关函数可检测对碰撞体或GUI文本元素的点击</p>
+<pre class="line-numbers language-none"><code class="language-none">&gt;# 判断鼠标点击
+&gt;void OnMouseDown()
+&gt;{
+rb.AddForce(-transform.forward * 500f);	//鼠标点击推出物体
+&gt;}  
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<h2 id="GetComponent"><a href="#GetComponent" class="headerlink" title="GetComponent"></a>GetComponent</h2><blockquote>
+<p>GetComponent 是访问游戏对象的组件的方法</p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">GameObject.GetComponent&lt;type&gt;()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>说明：</p>
+<ul>
+<li><p>GameObject 是定义 GameObject 游戏对象的变量名。</p>
+</li>
+<li><p>type 是组件名称，类型是 string。</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="UsingOtherComponent"><a href="#UsingOtherComponent" class="headerlink" title="UsingOtherComponent"></a>UsingOtherComponent</h3><pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class UsingOtherComponents : MonoBehaviour
+{
+    public GameObject otherGameObject;
+    
+    private AnotherScript anotherScript;
+    private YetAnotherScript yetAnotherScript;
+    private BoxCollider boxCol;
+    
+    //使用Awake减少开销
+    void Awake ()
+    {
+        anotherScript = GetComponent&lt;AnotherScript&gt;();   
+        yetAnotherScript = otherGameObject.GetComponent&lt;YetAnotherScript&gt;();   //可调用其他物体上的脚本
+        boxCol = otherGameObject.GetComponent&lt;BoxCollider&gt;();    //可调用其他物体上的碰撞体
+    }
+    
+    
+    void Start ()
+    {
+        boxCol.size = new Vector3(3,3,3);
+        Debug.Log("The player's score is " + anotherScript.playerScore);  //可修改其他物体上脚本里的参数
+        Debug.Log("The player has died " + yetAnotherScript.numberOfPlayerDeaths + " times");  
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="AnotherScript"><a href="#AnotherScript" class="headerlink" title="AnotherScript"></a><strong>AnotherScript</strong></h3><pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class AnotherScript : MonoBehaviour
+{
+    public int playerScore = 9001;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="YetAnotherScript"><a href="#YetAnotherScript" class="headerlink" title="YetAnotherScript"></a>YetAnotherScript</h3><pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class YetAnotherScript : MonoBehaviour
+{
+    public int numberOfPlayerDeaths = 3;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">       MyComponment myCom=gameObject.GetComponent&lt;MyComponment&gt;();
+ 
+MyComponment childCom=gameObject.GetComponentInChildren&lt;MyComponment&gt;();
+ 
+MyComponment[] comS=gameObject.GetComponents&lt;MyComponment&gt;();
+ 
+MyComponment[] comS1=gameObject.GetComponentsInChildren&lt;MyComponment&gt;();
+ 
+MyComponment[] comSTrue=gameObject.GetComponentsInChildren&lt;MyComponment&gt;(true);
+ 
+MyComponment[] comSFalse=gameObject.GetComponentsInChildren&lt;MyComponment&gt;(false);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<ul>
+<li><p>GetCompoment <t>()从当前游戏对象获取组件T，只在当前游戏对象中获取，没得到的就返回null，不会去子物体中去寻找。</t></p>
+</li>
+<li><p>GetCompomentInChildren<t>()先从本对象中找，有就返回，没就子物体中找，知道找完为止。</t></p>
+</li>
+<li><p>GetComponents<t>()获取本游戏对象的所有T组件，不会去子物体中找。</t></p>
+</li>
+<li><p>GetComponentsInChildren<t>()=GetComponentsInChildren<t>(true)取本游戏对象及子物体的所有组件</t></t></p>
+</li>
+<li><p>GetComponentsInChildren<t>(false)取本游戏对象及子物体的所有组件 除开非活跃的游戏对象，不是该组件是否活跃。</t></p>
+</li>
+</ul>
+<h2 id="DeltaTime"><a href="#DeltaTime" class="headerlink" title="DeltaTime"></a>DeltaTime</h2><blockquote>
+<p>Time 类的 DeltaTime 用于计算两次更新或固定函数调用的间隔时长，用于移动或其他增量变化变得平滑</p>
+<p>因为完成一帧的时长是不一致的，按完成每帧做速率会不平滑</p>
+<p>Speed * Time.deltaTime 用于速率恒定</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class UsingDeltaTime : MonoBehaviour
+{
+    public float speed = 8f; 
+    public float countdown = 3.0f;
+
+    
+    void Update ()
+    {
+        countdown -= Time.deltaTime;
+        if(countdown &lt;= 0.0f) //亮灯
+            light.enabled = true;
+        
+         if(Input.GetKey(KeyCode.RightArrow)) //平滑移动
+            transform.position += new Vector3(speed * Time.deltaTime, 0.0f, 0.0f);
+    }   
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p><img src="https://raw.githubusercontent.com/BAICloud/image/master/img/002.png"></p>
+<ul>
+<li>值类型变量包含某个值，而所有引用类型变量都包含值存储位置的存储地址。因此如果值类型该改变，则只会影响特定变量 ；但如果引用类型改变，所有包含特定存储地址的变量都会受到影响。 </li>
+<li></li>
+</ul>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class DatatypeScript : MonoBehaviour 
+{
+    void Start () 
+    {
+        //值类型变量
+        Vector3 pos = transform.position;
+        pos = new Vector3(0, 2, 0); // 值类型，只有pos会受这行代码的影响，而transform.position不受影响
+        
+        //引用类型变量
+        Transform tran = transform; //赋值语句，使tran和transform指向同一个存储地址
+        tran.position = new Vector3(0, 2, 0); 	//tran引用类型，更改其中一个，另一个也会在随之改变。
+    } 
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><blockquote>
+<p>面向对象编程：将脚本拆分成多个脚本，每一个脚本承担一个角色或职责</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/BAICloud/image/master/img/%E7%B1%BB%E5%85%B3%E7%B3%BB%E5%9B%BE.jpg"></p>
+<h3 id="重要的类"><a href="#重要的类" class="headerlink" title="重要的类"></a>重要的类</h3><table>
+<thead>
+<tr>
+<th><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-GameObject.html">GameObject</a></th>
+<th>表示可以存在于场景中的对象的类型。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-MonoBehaviour.html">MonoBehaviour</a></td>
+<td>基类，默认情况下，所有 Unity 脚本都派生自该类。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-Object.html">Object</a></td>
+<td>Unity 可以在编辑器中引用的所有对象的基类。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/ScriptingTransform.html">Transform</a></td>
+<td>提供多种方式来通过脚本处理游戏对象的位置、旋转和缩放，以及与父和子游戏对象的层级关系。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/VectorCookbook.html">Vectors</a></td>
+<td>用于表达和操作 2D、3D 和 4D 点、线和方向的类。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-Quaternion.html">Quaternion</a></td>
+<td>表示绝对或相对旋转的类，并提供创建和操作它们的方法。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-ScriptableObject.html">ScriptableObject</a></td>
+<td>可用于保存大量数据的数据容器。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/TimeFrameManagement.html">Time（以及帧率管理）</a></td>
+<td>Time 类用于测量和控制时间，并管理项目的帧率。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-Mathf.html">Mathf</a></td>
+<td>一组常见的数学函数，包括三角函数、对数函数以及游戏和应用开发中常用的其他函数。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-Random.html">Random</a></td>
+<td>提供简便的方法来生成各种常用类型的随机值。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-Debug.html">Debug</a></td>
+<td>用于可视化编辑器中的信息，这些信息可以帮助您了解或调查项目运行时发生的情况。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/GizmosAndHandles.html">Gizmos 和 Handles</a></td>
+<td>用于在 Scene 视图和 Game 视图绘制线条和形状以及交互式手柄和控件。</td>
+</tr>
+</tbody></table>
 
                 
             </div>
@@ -1144,7 +1360,7 @@ float V = Input.GetAxis("Vertical");
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">BY_CLOUD</a>
+                    <a href="/about" rel="external nofollow noreferrer">白昀</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -1167,7 +1383,7 @@ float V = Input.GetAxis("Vertical");
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">BY_CLOUD</a>
+                    <a href="/about" target="_blank">白昀</a>
                     !
                 </span>
             </div>
@@ -1191,7 +1407,11 @@ float V = Input.GetAxis("Vertical");
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/unity/">
+                                    <span class="chip bg-color">unity</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1357,7 +1577,7 @@ float V = Input.GetAxis("Vertical");
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Mon Sep 19 2022 02:33:34 GMT+0800',
+    id: 'Mon Sep 19 2022 02:44:40 GMT+0800',
     owner: 'BAICloud',
     repo: 'BAICloud.github.io',
     oauth: {
@@ -1688,19 +1908,19 @@ gitment.render('gitment-content');
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/09/19/python-yu-fa-xue-xi/">
+                <a href="/2022/09/19/hexo-kuai-jie-zhi-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python语法学习">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="HEXO快捷指令">
                         
-                        <span class="card-title">python语法学习</span>
+                        <span class="card-title">HEXO快捷指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            “人生苦短，我学python”
+                            健忘星人必备
                         
                     </div>
                     <div class="publish-info">
@@ -1722,8 +1942,8 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/HEXO%E5%BB%BA%E7%AB%99/">
+                        <span class="chip bg-color">HEXO建站</span>
                     </a>
                     
                 </div>
@@ -1737,24 +1957,24 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/css-yu-fa-xue-xi/">
+                <a href="/2022/09/19/python-yu-fa-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="CSS 语法学习">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python语法学习">
                         
-                        <span class="card-title">CSS 语法学习</span>
+                        <span class="card-title">python语法学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            跟着[pink老师](https://www.bilibili.com/video/BV14J4114768?t=2.7)的教程做的笔记
+                            “人生苦短，我学python”
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-19
                             </span>
                         <span class="publish-author">
                             
@@ -1771,8 +1991,8 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -1957,7 +2177,7 @@ gitment.render('gitment-content');
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.3k</span>&nbsp;字
+                class="white-color">21.4k</span>&nbsp;字
             
             
             
