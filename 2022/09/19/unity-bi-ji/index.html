@@ -32,9 +32,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.1">
+<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="BY_CLOUD" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="BY_CLOUD" type="application/atom+xml">
 </head>
 
 
@@ -608,21 +608,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-26
+                    2022-09-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.4k
+                    5.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    14 分
+                    22 分
                 </div>
                 
 
@@ -645,7 +645,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="unity笔记"><a href="#unity笔记" class="headerlink" title="unity笔记"></a>unity笔记</h1><h2 id="一些重要概念"><a href="#一些重要概念" class="headerlink" title="一些重要概念"></a>一些重要概念</h2><p>project工程：一个游戏即一个工程<br>scene场景：一个游戏包括很多场景/关卡<br>gameobject游戏对象： 构成游戏的各种对象。如场景模型，角色以及其他抽象（控制模块）单的确存在于场景中的对象<br>component组件：是unity的核心架构。每个游戏对象有一个或者多个组件构成，每种组件赋予游戏对象某种功能<br>script脚本：是实现component的脚本程序。现在unity支持c#语言<br>prefabs预置：在unity3d中为游戏对象添加各种组件，并设置好他的属性和行为，然后反复利用。</p>
+                <h1 id="unity笔记"><a href="#unity笔记" class="headerlink" title="unity笔记"></a>unity笔记</h1><ul>
+<li>最近发现了大佬整合的一些关于unity学习的资料<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/29383687">Unity 学习资源（超全） - 知乎 (zhihu.com)</a></li>
+</ul>
+<h2 id="一些重要概念"><a href="#一些重要概念" class="headerlink" title="一些重要概念"></a>一些重要概念</h2><p>project工程：一个游戏即一个工程<br>scene场景：一个游戏包括很多场景/关卡<br>gameobject游戏对象： 构成游戏的各种对象。如场景模型，角色以及其他抽象（控制模块）单的确存在于场景中的对象<br>component组件：是unity的核心架构。每个游戏对象有一个或者多个组件构成，每种组件赋予游戏对象某种功能<br>script脚本：是实现component的脚本程序。现在unity支持c#语言<br>prefabs预置：在unity3d中为游戏对象添加各种组件，并设置好他的属性和行为，然后反复利用。</p>
 <h2 id="C-入门"><a href="#C-入门" class="headerlink" title="C#入门"></a>C#入门</h2><h3 id="GetKeyDown"><a href="#GetKeyDown" class="headerlink" title="GetKeyDown:"></a>GetKeyDown:</h3><pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -1292,7 +1295,16 @@ public class DatatypeScript : MonoBehaviour
 <p>面向对象编程：将脚本拆分成多个脚本，每一个脚本承担一个角色或职责</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/BAICloud/image/master/img/%E7%B1%BB%E5%85%B3%E7%B3%BB%E5%9B%BE.jpg"></p>
-<h3 id="重要的类"><a href="#重要的类" class="headerlink" title="重要的类"></a>重要的类</h3><table>
+<h3 id="重要的类"><a href="#重要的类" class="headerlink" title="重要的类"></a>重要的类</h3><ul>
+<li>找到了一个c#构造函数写的很好的大佬的教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/liu991029/article/details/106550226">(104条消息) C#构造函数(超详解,建议收藏!!!)_Just Do Its的博客-CSDN博客_c#构造函数</a></li>
+</ul>
+<p>譬喻：变量 –&gt; 盒子，函数–&gt;机器，类 –&gt; 他们所在的工厂</p>
+<blockquote>
+<p>类是一个容器，用来储存变量和函数，具备多种功能，包括将配合工作的要素组合起来。他们是有组织结构的工具，属于面向对象编程（OOP）。</p>
+<p>原则是将一个脚本拆分成多个脚本，其中每一个脚本成本单一个角色或职责。因此类非常适合战门完成一项职责。</p>
+<p>创建类或者struct时，都要调用构造函数，类或struct都可以有多个构造函数，这些函数使用不同的参数。</p>
+</blockquote>
+<table>
 <thead>
 <tr>
 <th><a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2020.3/Manual/class-GameObject.html">GameObject</a></th>
@@ -1344,6 +1356,267 @@ public class DatatypeScript : MonoBehaviour
 <td>用于在 Scene 视图和 Game 视图绘制线条和形状以及交互式手柄和控件。</td>
 </tr>
 </tbody></table>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEnging;
+
+public Class Inventory: MonoBehavior //Inventory Class
+{
+    public class Stuff //stuff子类,包含三个int变量：projectileA/B/C
+    {
+        public int projectileA;
+    	public int projectileB;
+    	public int projectileC;
+    	public float fuel;  //如果加入了新的变量，但是在原类的构造函数中并没有对其进行操作，那么我们可以再设置一个构造函数，来为我们执行这个赋值操作（vsc CTOR+Tab插入代码片段）
+    }
+	
+    //一个类可以有多个构造函数，但是只能调用其中的一个进行初始化。
+    // 构造函数，与类同名，可以重载，不需要返回值，构造函数用于初始化
+    public stuff(int prA, int prB, int prC)  //可以编写自己的构造函数来为这些变量设置参数
+    {
+        projectileA = prA; //将变量赋值给参数，我们在创建对象或创建类实例时，可以在下面使用括号来定义默认值。
+        projectileB = prB;
+        projectileC = prC;
+    }
+    public stuff(int prA, float fu) //此构造函数用来设置新的对象fule
+    {
+        projectileA = PRa;
+        fuel = fu;
+    }
+    public Stuff() //构造函数允许设置默认值，限制实例化以及编写灵活易读的代码
+    {
+        projectileA = 1;
+        projectileB = 1;
+        projectileC = 1;
+    }
+    
+    // 实例化
+    public Stuff myStuff = new Stuff(50, 5, 5); //创建子类Stuff的实例，名为Object。我们能给他指定数据类型，也就是类的名称；接着给他命名，也就是“new”，然后使用类的名称。类名称结尾处的括号表明使用的是构造函数
+    public Stuff myOtherStuff = new Stuff(20, 50.5f); //会实例化新的对象，因为参数匹配。，而类的其他变量的实例化将会使用上面的代码，因为参数匹配。
+    
+    void Start()
+    {
+        Debug.Log(myStuff.projectileA);
+    }
+	
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>这里直接搬了大佬文章关于实例构造函数的解释：</p>
+<h3 id="实例构造函数"><a href="#实例构造函数" class="headerlink" title="实例构造函数"></a>实例构造函数</h3><ul>
+<li>构造函数的名字与类名相同</li>
+<li>使用new表达式创建类的对象时，会调用其构造函数。并且通常初始化新对象的数据成员。</li>
+<li>除非类是静态的，否则会为没有构造函数的类，自动生成一个默认构造函数，并使用默认值来初始化对象字段。</li>
+<li>构造函数可以有参数，可以以参数个数、参数类型、参数顺序不同的形式存在多个构造函数。</li>
+</ul>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">class Program
+    {
+        static void Main(string[] args)
+        {
+        	Student stu1 = new Student();//无参构造函数调用
+			Student stu2 = new Student(10,"20");
+			Console.WriteLine($"X={stu1.X}---Y={stu1.Y}");//结果为:X=0---Y=0
+            Console.WriteLine($"X={stu2.X}---Y={stu2.Y}");//结果为:X=10---Y=20
+            Console.ReadLine();
+        }
+    }
+class Student
+    {
+        public int X { get; set; }
+        public string Y { get; set; }
+        //无参构造函数
+        public Student()
+        {
+            this.X = 0;
+            this.Y = "0";
+        }
+        //有两个参数构造函数
+        public Student(int x, string y) {
+            this.X = x;
+            this.Y = y;
+        }
+    }
+
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>————————————————<br>版权声明：本文为CSDN博主「Just Do Its」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/liu991029/article/details/106550226">https://blog.csdn.net/liu991029/article/details/106550226</a></p>
+<h2 id="Instantiate"><a href="#Instantiate" class="headerlink" title="Instantiate"></a>Instantiate</h2><blockquote>
+<p>Instantiate 用于克隆 gameObject，常用于克隆 Prefabs，即预配置对象。返回值为object的，在制作游戏的过程中，为了投射抛射体并给他添加作用力，强制类型转换为Rigidbody，然后将返回值放在Rigidbody中。</p>
+<p>例如抛射出的物体 </p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">&gt;Instantiate(object);	// 参数为想克隆的对象
+&gt;Instantiate(object, position, rotation);	// 指定位置和角度
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class UsingInstantiate : MonoBehaviour
+{
+    public Rigidbody rocketPrefab;
+    public Transform barrelEnd;
+    
+    
+    void Update ()
+    {
+        if(Input.GetButtonDown("Fire1"))
+        {
+            Rigidbody rocketInstance;
+            rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody; //克隆对象并将其类型强追转换未刚体并赋值给刚体
+            rocketInstance.AddForce(barrelEnd.forward * 5000);
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>发射刚体后销毁刚体：</p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class RocketDestruction : MonoBehaviour
+{
+    void Start()
+    {
+        Destroy (gameObject, 1.5f);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><blockquote>
+<p>储存同类型数据</p>
+</blockquote>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">int[] myIntArray = new int [3];
+myIntArray[0] = 1;
+myIntArray[1] = 2;
+myIntArray[2] = 3;
+
+int[] myInyArray = {1, 2, 3};
+
+public GameObject[] players; //如果将数组设为公开，并为他分配值，保存脚本并返回控制台，就能看到在脚本分配给对象的位置，players数组公开显示在Inspector中
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class Arrays : MonoBehaviour
+{
+    public GameObject[] players;
+
+    void Start ()
+    {
+        players = GameObject.FindGameObjectsWithTag("Player"); //寻找游戏中tab未“Player”的GameObject,并将其放入数组
+        
+        for(int i = 0; i &lt; players.Length; i++)
+        {
+            Debug.Log("Player Number "+i+" is named "+players[i].name);
+        } //按顺序输出tab为“Player”的GameObject的名字
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="Invoke"><a href="#Invoke" class="headerlink" title="Invoke"></a>Invoke</h2><blockquote>
+<p>延时执行</p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">public GameObject target;
+
+void Start()
+{
+    Invoke("SpawObject", 2);	// 2s后实例化出target
+    InvokeRepeating("SpawObject", 2, 1);	// 2s后实例化出target，生成后间隔为1秒	
+    
+    CancelInvoke("SpawObject");		// 取消循
+}
+
+void SpawObject() 
+{ 
+    float x = Random.Range(-2.0f, 2.0f);	// Random 随机n Range 范围n
+    Instantiate(target, new Vector(0, 2, 0), Quaternion.identity); //只会将位置（0，2，0）处的target对象实例化
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<ul>
+<li>只有不包含参数，且返回类型未void的mathod，才能用Invoke调用。</li>
+</ul>
+<h2 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h2><blockquote>
+<p>列出枚举值，定义变量，选择枚举值给变量赋值</p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class EnumScript : MonoBehaviour 
+{
+    enum Direction {North, East, South, West}; //这个枚举中  声明的每个常量，都有一个值，默认为{0，1，2...}。如果需要的话，值的类型和值本身都可以被覆盖，如{North = 1, East, South, West} / {North = 10, East = 23, South = 45, West = 0}  / enum Direction : short {North, East, South, West}
+
+        void Start () 
+    {
+        Direction myDirection;
+        
+        myDirection = Direction.North;
+    }
+    
+    Direction ReverseDirection (Direction dir) //enum可以在函数中使用
+    {
+        if(dir == Direction.North)
+            dir = Direction.South;
+        else if(dir == Direction.South)
+            dir = Direction.North;
+        else if(dir == Direction.East)
+            dir = Direction.West;
+        else if(dir == Direction.West)
+            dir = Direction.East;
+        
+        return dir;     
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<ul>
+<li>枚举可以在class内或者外创建，我们也可以创建只含此枚举的c#脚本，我们不将其声明为class，而是声明为enum，然后可以在其他scripts的class中，使用这个enum，因为他是public的。</li>
+</ul>
+<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><blockquote>
+<p>更简洁的选择语句，避免选择多时代码变得冗长</p>
+<pre class="line-numbers language-c#" data-language="c#"><code class="language-c#">using UnityEngine;
+using System.Collections;
+
+public class ConversationScript : MonoBehaviour 
+{
+    public int intelligence = 5;
+    
+    
+    void Greet()
+    {
+        switch (intelligence)
+        {
+        case 5:
+            print ("Why hello there good sir! Let me teach you about Trigonometry!");
+            break;
+        case 4:
+            print ("Hello and good day!");
+            break;
+        case 3:
+            print ("Whadya want?");
+            break;
+        case 2:
+            print ("Grog SMASH!");
+            break;
+        case 1:
+            print ("Ulg, glib, Pblblblblb");
+            break;
+        default: //在最后一个实力中，我们需要获取所有无专属实例的内容，为此，此处不用case，而是使用另一个关键词default，它不需要有值。
+            print ("Incorrect intelligence level.");
+            break;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<ul>
+<li>vsc快捷键：s-w+Tab</li>
+</ul>
 
                 
             </div>
@@ -2177,7 +2450,7 @@ gitment.render('gitment-content');
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.4k</span>&nbsp;字
+                class="white-color">23.1k</span>&nbsp;字
             
             
             
