@@ -615,7 +615,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    11.9k
+                    12k
                 </div>
                 
 
@@ -810,7 +810,8 @@
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="css引入方式"><a href="#css引入方式" class="headerlink" title="css引入方式"></a>css引入方式</h3><h4 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h4><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<h3 id="css引入方式"><a href="#css引入方式" class="headerlink" title="css引入方式"></a>css引入方式</h3><h4 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h4><p>内部样式表（内嵌样式表）是写到html页面内部，是将所有的css代码抽取出来，单独放到一个 style 标签当中。<br>就是在html页面内部写样式，但是单独写到 style 标签内部。</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
 		<span class="token selector">div</span><span class="token punctuation">{</span>
 			<span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
@@ -952,7 +953,7 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="focus伪类选择器"><a href="#focus伪类选择器" class="headerlink" title="focus伪类选择器"></a>focus伪类选择器</h5><p>：focus伪类选择器用于选取获得焦点的表单元素<br>焦点就是光标，一般情况<input>表单元素才能获取，因此这个选择器主要针对表单元素</p>
+<h5 id="focus伪类选择器"><a href="#focus伪类选择器" class="headerlink" title="focus伪类选择器"></a>focus伪类选择器</h5><p>：focus伪类选择器用于选取获得焦点的表单元素<br>焦点就是光标，一般情况 input 表单元素才能获取，因此这个选择器主要针对表单元素</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -968,9 +969,9 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="css元素显示模式"><a href="#css元素显示模式" class="headerlink" title="css元素显示模式"></a>css元素显示模式</h3><p>网页的标签非常多，在不同的地方会用奥不同类型的标签，了解他们可以更好地布局我们的页面<br>元素的显示模式就是元素（标签）以什么方式进行显示，比如</p><div>独自占一行，<span>一行可以放很多个<br>一般分为块元素和行内元素<p></p>
-<h4 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h4><p>常见的块元素有</p><h1>~</h1><h6>,<div>,<ul>,<ol>.<br>特点：<br>1.每个块元素自己独占一行<br>2.可以控制宽度，高度,外边距和内边距<br>3.住过没有设置宽度，他的宽度会和父级元素相同<br>4.是一个容器盒子，里面可以放块元素或行内元素<p></p>
-<p>注意：文字类元素（e.g.</p><p>,</p><h1>-</h1><h6>）内不能放块元素<p></p>
+<h3 id="css元素显示模式"><a href="#css元素显示模式" class="headerlink" title="css元素显示模式"></a>css元素显示模式</h3><p>网页的标签非常多，在不同的地方会用奥不同类型的标签，了解他们可以更好地布局我们的页面<br>元素的显示模式就是元素（标签）以什么方式进行显示，比如</p><div>独自占一行，span 一行可以放很多个<br>一般分为块元素和行内元素<p></p>
+<h4 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h4><p>常见的块元素有 h1 ~ h6 , div , ul , ol .<br>特点：<br>1.每个块元素自己独占一行<br>2.可以控制宽度，高度,外边距和内边距<br>3.住过没有设置宽度，他的宽度会和父级元素相同<br>4.是一个容器盒子，里面可以放块元素或行内元素</p>
+<p>注意：文字类元素（e.g. p , h1 - h6 ）内不能放块元素</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -986,8 +987,8 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-</h6><h4 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h4><p>行内元素（内联元素）如：,<a>,<strong>,<em>,<i>,<del>,<ins>,<s>,<u>,<span>等<br>特点：<br>1.相邻行内元素在一行上，一行可以显示多个<br>2.宽，高直接设置是无效的<br>3.默认宽度是文字宽度<br>4.行内元素内只能放行内元素或文本元素</span></u></s></ins></del></i></em></strong></a></p><a><strong><em><i><s><u>
-</u></s></i></em></strong></a><i><s><u><p><a>注意：<br></a><a>(链接)里面不能放其他</a><a>(链接)，但是可以放块级元素</a></p><a>
+<h4 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h4><p>行内元素（内联元素）如：, a , strong , em , i , del , ins , s , u , span 等<br>特点：<br>1.相邻行内元素在一行上，一行可以显示多个<br>2.宽，高直接设置是无效的<br>3.默认宽度是文字宽度<br>4.行内元素内只能放行内元素或文本元素</p>
+<p>注意：<br> a (链接)里面不能放其他 a (链接)，但是可以放块级元素</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
@@ -1004,7 +1005,7 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-</a><h4 id="行内块元素"><a></a><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h4><p>在行内元素中有几个特殊的标签——<img>,<input>,等，他们同时具有块元素和行内元素的特点，有些资料称他们为行内块元素<br>特点：<br>1.和相邻元素（行内块）在一行上，但是他们之间会有空白缝隙，一行可以显示多个（行内元素特点）<br>2.默认宽度就是它本身的宽度（行内元素特点）<br>3.宽度，高度，内边距都可以控制（块级元素特点）</p>
+<h4 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h4><p>在行内元素中有几个特殊的标签—— img/ , input/ , td 等，他们同时具有块元素和行内元素的特点，有些资料称他们为行内块元素<br>特点：<br>1.和相邻元素（行内块）在一行上，但是他们之间会有空白缝隙，一行可以显示多个（行内元素特点）<br>2.默认宽度就是它本身的宽度（行内元素特点）<br>3.宽度，高度，内边距都可以控制（块级元素特点）</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -1022,7 +1023,7 @@ shift+alt+f
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="元素显示模式的转换"><a href="#元素显示模式的转换" class="headerlink" title="元素显示模式的转换"></a>元素显示模式的转换</h4><p>特殊情况下，我们需要元素模式的转换，简单理解：一个模式的元素转换为另一种模式的元素<br>方法：<br>转换块元素：display:block;<br>转换行内元素: display: inline;<br>转换行内块元素：display: inline-block;</p>
-<p>如想要增加<a>链接的触发范围：</a></p><a>
+<p>如想要增加 a 链接的触发范围：</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -1038,7 +1039,7 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>把</p></a><div><a>改为行内元素<p></p>
+<p>把 div 改为行内元素</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -1054,7 +1055,7 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>把<span>改为行内块元素</span></p>
+<p>把 span改为行内块元素</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -1070,7 +1071,7 @@ shift+alt+f
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-</a><h4 id="截图工具-snipaste"><a></a><a href="#截图工具-snipaste" class="headerlink" title="截图工具 snipaste"></a>截图工具 snipaste</h4><p>snipaste是一款简单却强大的截图工具，也可以让你的截图贴在屏幕上<br>常用快捷方式：<br>1.f1截图，同时测量大小，设置箭头，书写文字等<br>2.f3在桌面置顶显示<br>3.点击图签，alt可以取色（shift切换取色模式）<br>4.esc取消图片显示</p>
+<h4 id="截图工具-snipaste"><a href="#截图工具-snipaste" class="headerlink" title="截图工具 snipaste"></a>截图工具 snipaste</h4><p>snipaste是一款简单却强大的截图工具，也可以让你的截图贴在屏幕上<br>常用快捷方式：<br>1.f1截图，同时测量大小，设置箭头，书写文字等<br>2.f3在桌面置顶显示<br>3.点击图签，alt可以取色（shift切换取色模式）<br>4.esc取消图片显示</p>
 <h4 id="小技巧：单行文字垂直居中的代码"><a href="#小技巧：单行文字垂直居中的代码" class="headerlink" title="小技巧：单行文字垂直居中的代码"></a>小技巧：单行文字垂直居中的代码</h4><p>css中没有提供单行文字垂直居中的方法<br>令height=line-height<br>原理：行高的上空隙和下空隙把文字挤到中间了。如果是行高小于盒子高度，文字会偏上；行高大于盒子高度，文字会偏下。</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
@@ -1382,7 +1383,7 @@ shift+alt+f
 <h3 id="浮动元素经常和标准流父级搭配使用"><a href="#浮动元素经常和标准流父级搭配使用" class="headerlink" title="浮动元素经常和标准流父级搭配使用"></a>浮动元素经常和标准流父级搭配使用</h3><p>为了约束浮动位置，我们网页布局一般采取的策略是：<br>先用标准流的父元素排列上下位置，之后内部资源使用采取浮动排列左右位置，符合网页布局第一准则。<br>浮动只会影响后面的元素，不会影响前面的元素。</p>
 <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动的本质是清除浮动造成的影响</p>
 <p>语法：{clear:属性值1;}(left ridht both)</p>
-<h4 id="额外标签法（隔墙法），是w3c推荐的做法"><a href="#额外标签法（隔墙法），是w3c推荐的做法" class="headerlink" title="额外标签法（隔墙法），是w3c推荐的做法"></a>额外标签法（隔墙法），是w3c推荐的做法</h4><p>在最后一个浮动标签的末尾添加一个空标签，如</p><div style="clear:both"></div>，或者其他的表标签（如<br>等）新增元素必须是块级元素<br>优点：通俗易懂，书写方便<br>缺点：添加许多无意义的标签，结构化较差。<p></p>
+<h4 id="额外标签法（隔墙法），是w3c推荐的做法"><a href="#额外标签法（隔墙法），是w3c推荐的做法" class="headerlink" title="额外标签法（隔墙法），是w3c推荐的做法"></a>额外标签法（隔墙法），是w3c推荐的做法</h4><p>在最后一个浮动标签的末尾添加一个空标签，如 div style=”clear:both”  /div ，或者其他的表标签（如 br/ 等）新增元素必须是块级元素<br>优点：通俗易懂，书写方便<br>缺点：添加许多无意义的标签，结构化较差。</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
@@ -1867,7 +1868,7 @@ clear: both;
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼今天不做咸鱼
 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></u></s></i></ol></ul></div></h6></span></div>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
                 
             </div>
             <hr/>
@@ -2700,7 +2701,7 @@ gitment.render('gitment-content');
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">23.4k</span>&nbsp;字
+                class="white-color">23.5k</span>&nbsp;字
             
             
             
