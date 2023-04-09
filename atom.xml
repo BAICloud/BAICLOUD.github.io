@@ -6,7 +6,7 @@
   <link href="http://baicloud.github.io/atom.xml" rel="self"/>
   
   <link href="http://baicloud.github.io/"/>
-  <updated>2022-09-20T05:50:39.296Z</updated>
+  <updated>2023-04-09T16:25:26.434Z</updated>
   <id>http://baicloud.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>0</title>
+    <link href="http://baicloud.github.io/2023/04/10/000/"/>
+    <id>http://baicloud.github.io/2023/04/10/000/</id>
+    <published>2023-04-09T16:24:57.000Z</published>
+    <updated>2023-04-09T16:25:26.434Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2022《网易minigame》项目总结</title>
+    <link href="http://baicloud.github.io/2022/10/28/2022-wang-yi-minigame-xiang-mu-zong-jie/"/>
+    <id>http://baicloud.github.io/2022/10/28/2022-wang-yi-minigame-xiang-mu-zong-jie/</id>
+    <published>2022-10-28T00:26:19.000Z</published>
+    <updated>2022-10-28T03:58:57.973Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2022网易minigame项目总结&quot;&gt;&lt;a href=&quot;#2022网易minigame项目总结&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>洛谷刷题</title>
